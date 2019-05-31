@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="content" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/estilo.js"></script>
+    <title>basuc table with JS</title>
+</head>
+<body>
+
+    <input type="text" id="nome">
+    <button id="btn-clicou"> Exibir nome</button>
+
+    <img src="https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true" alt="lampada apagada">
+
+    <script>
+    
+
+    document.getElementById("btn-clicou")
+    .addEventListener("click",function(){
+    
+        var input = document.getElementById("nome").value;
+    
+        alert(input.length);
+
+
+    });
+
+    </script>
+</body>
+
+</html>
