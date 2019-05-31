@@ -14,21 +14,19 @@
     <input type="text" id="nome">
     <button id="btn-clicou"> Exibir nome</button>
 
-    <img src="https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true" alt="lampada apagada">
+    <img id="image" src="https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true" alt="lampada apagada">
 
     <script>
     
+        document.getElementById("image").addEventListener("click",function(){
+            this.src = "https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true";
+            this.alt = "lampada apagada";
+        });
 
-    document.getElementById("btn-clicou")
-    .addEventListener("click",function(){
-    
-        var input = document.getElementById("nome").value;
-    
-        alert(input.length);
-
-
-    });
-
+        document.getElementById("image").addEventListener("mouseover",function(){
+            this.src = "https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada-on.jpg?raw=true";
+            this.alt = "lampada acessa";
+        });
     </script>
 </body>
 
